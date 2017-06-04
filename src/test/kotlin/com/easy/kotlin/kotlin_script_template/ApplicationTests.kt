@@ -1,4 +1,4 @@
-package io.spring.demo
+package com.easy.kotlin.kotlin_script_template
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

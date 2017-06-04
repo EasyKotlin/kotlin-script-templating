@@ -1,5 +1,7 @@
-import io.spring.demo.i18n
+import com.easy.kotlin.kotlin_script_template.i18n
 
-"""<html>
+"""
+<html>
 <body>
-<title>${i18n("title")}</title>"""
+<title>${i18n("title")}</title>
+"""

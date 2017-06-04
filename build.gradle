@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.1.0-beta-17'
+		kotlinVersion = '1.1.2'
 		springBootVersion = '2.0.0.BUILD-SNAPSHOT'
 	}
 	repositories {
@@ -42,5 +42,5 @@ dependencies {
 		exclude group: "org.apache.maven", module: "maven-core"
 		exclude group: "org.sonatype.aether", module: "aether-api"
 	}
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
 }

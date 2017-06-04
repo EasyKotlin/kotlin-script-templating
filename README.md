@@ -1,11 +1,18 @@
+Kotlin Script Template Web Appliciation
+===
+
+
 Spring Boot + Kotlin type safe template rendering with i18n and nested template support.
 
-Requires Spring Framework 5.x and Kotlin 1.1+.
+Requires:
+ 
+ - Spring Framework 5.x and 
+ - Kotlin 1.1+.
 
 These templates look like:
 
 ```kotlin
-import io.spring.demo.*
+import com.easy.kotlin.kotlin_script_template.*
 
 """
 ${include("header")}

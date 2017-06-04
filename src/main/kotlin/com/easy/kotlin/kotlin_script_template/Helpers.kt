@@ -1,4 +1,4 @@
-package io.spring.demo
+package com.easy.kotlin.kotlin_script_template
 
 import javax.script.ScriptContext
 import javax.script.ScriptEngineManager

@@ -1,4 +1,4 @@
-package io.spring.demo
+package com.easy.kotlin.kotlin_script_template
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -13,9 +13,18 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry
 
 
+fun main(args: Array<String>) {
+    SpringApplication.run(Application::class.java, *args)
+}
+
 @SpringBootApplication
 class Application : WebMvcConfigurerAdapter() {
 
+
+    /**
+     * ScriptTemplateConfigurer
+     * scripts/render.kts
+     */
     @Bean
     fun kotlinScriptConfigurer(): ScriptTemplateConfigurer {
         val configurer = ScriptTemplateConfigurer()
@@ -36,7 +45,7 @@ class Application : WebMvcConfigurerAdapter() {
 
     @Bean
     fun localeResolver() = SessionLocaleResolver().apply {
-        setDefaultLocale(Locale.ENGLISH)
+        setDefaultLocale(Locale.CHINESE)
     }
 
     @Bean
@@ -48,6 +57,4 @@ class Application : WebMvcConfigurerAdapter() {
 
 }
 
-fun main(args: Array<String>) {
-    SpringApplication.run(Application::class.java, *args)
-}
+
